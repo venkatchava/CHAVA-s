@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHAVA's Cars and Travels</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">CHAVA's Cars & Travels</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Drive With Confidence. Travel With CHAVA.</h1>
+    <p>Your trusted partner for reliable cars and unforgettable journeys.</p>
+    <a href="#contact" class="btn">Book Now</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>CHAVA's Cars and Travels is dedicated to providing safe, comfortable, and affordable travel experiences. Whether you need a car for a day or a trip for a week, we’ve got you covered.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Car Rentals – Daily & Weekly</li>
+      <li>Airport Transfers</li>
+      <li>Outstation Travel Packages</li>
+      <li>Chauffeur Services</li>
+    </ul>
+  </section>
+
+  <section class="section gallery">
+    <h2>Our Fleet</h2>
+    <div class="gallery-grid">
+      <img src="car1.jpg" alt="SUV Rental" />
+      <img src="car2.jpg" alt="Sedan Rental" />
+      <img src="car3.jpg" alt="Van Rental" />
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Book a Ride</h2>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
+
+      <label for="service">Service Needed</label>
+      <select name="service" required>
+        <option value="">Select One</option>
+        <option value="car rental">Car Rental</option>
+        <option value="airport transfer">Airport Transfer</option>
+        <option value="outstation">Outstation Travel</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CHAVA's Cars and Travels. All rights reserved.</p>
+  </footer>
+</body>
+</html>
